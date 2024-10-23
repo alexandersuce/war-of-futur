@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png">
+    <title>War Of Futur - Boutique</title>
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <a href="index.html">
+                <img src="logo.png" alt="Vortex Logo" class="logo">
+            </a>
+            <a href="index.html">
+                <img src="cooltext468671465913429.png" alt="">
+            </a>
+        </div>
+        <div class="right-header">
+            <input type="text" class="search" placeholder="Rechercher un jeu...">
+            <img src="https://img.icons8.com/m_rounded/512/FFFFFF/appointment-reminders.png" alt="Notifications" class="icon">
+            <a href="profil.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/3408/3408506.png" alt="Profil" class="icon">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="store-section">
+            <h1>Bienvenue dans la boutique War of Futur</h1>
+            <p>Utilisez un code pour débloquer un skin d'arme !</p>
+
+            <form id="code-form">
+                <label for="game-code">Entrez votre code de jeu :</label>
+                <input type="text" id="game-code" placeholder="Exemple: 34567">
+                <button type="button" onclick="generateFinalCode()">Générer le code final</button>
+            </form>
+
+            <div id="final-code-section" style="display: none;">
+                <h2>Votre code final :</h2>
+                <p id="final-code"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
